@@ -9,44 +9,49 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #fefefe;
+      background-color: #f9fbff;
       color: #1a1a1a;
       line-height: 1.6;
     }
     header {
-      background: #0052cc;
+      background: linear-gradient(135deg, #0052cc, #003399);
       color: white;
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 3rem 1rem 2rem;
     }
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       margin-bottom: 0.5rem;
     }
     header p {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
+      max-width: 700px;
+      margin: auto;
     }
     .hero {
       text-align: center;
-      padding: 2rem;
+      padding: 3rem 1.5rem;
     }
     .hero img {
-      max-width: 280px; 
+      max-width: 280px;
+      margin-bottom: 1rem;
     }
     .btn {
-      background: #00c851;
+      background: #ff4444;
       color: white;
-      font-weight: bold;
+      font-weight: 600;
       padding: 1rem 2rem;
       font-size: 1.1rem;
       border: none;
-      border-radius: 8px;
+      border-radius: 10px;
       cursor: pointer;
       margin-top: 1.5rem;
       transition: background 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
     }
     .btn:hover {
-      background: #007e33;
+      background: #cc0000;
     }
     .btn-fixed {
       position: fixed;
@@ -59,8 +64,10 @@
       border-radius: 12px;
       z-index: 1000;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      font-weight: bold;
+      text-decoration: none;
     }
-    .benefits, .testimonials, .bonus, .cta, .faq {
+    section {
       padding: 2rem 1.5rem;
       max-width: 900px;
       margin: auto;
@@ -72,21 +79,29 @@
     }
     ul {
       list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
+      padding-left: 1.5rem;
+      position: relative;
     }
     ul li::before {
       content: '✔';
+      position: absolute;
+      left: 0;
       color: #00c851;
-      margin-right: 0.5rem;
     }
     .testimonial {
-      background: #f1f1f1;
+      background: #f1f6ff;
       padding: 1rem;
       border-radius: 10px;
       margin-bottom: 1rem;
+      border-left: 4px solid #0052cc;
     }
     .bonus-box {
-      background: #fff3cd;
-      border-left: 5px solid #ffcc00;
+      background: #fff9e6;
+      border-left: 5px solid #ffc107;
       padding: 1rem;
       margin-bottom: 1rem;
       border-radius: 8px;
@@ -99,10 +114,9 @@
       padding: 3rem 2rem;
       margin-top: 3rem;
       box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-      position: relative;
     }
     .cta::before {
-      content: "🔥 OFERTA POR TEMPO LIMITADO";
+      content: "🔥 OFERTA DE LANÇAMENTO LIMITADA";
       display: block;
       font-size: 0.9rem;
       color: #ffeb3b;
@@ -117,30 +131,18 @@
       font-size: 2.5rem;
       color: #00ff55;
       margin: 1rem 0;
-      font-weight: bold; 
-    }
-    .cta .btn {
-      font-size: 1.2rem;
-      padding: 1.2rem 3rem;
-      background-color: #ff4444;
-      border-radius: 12px;
-    }
-    .cta .btn:hover {
-      background-color: #cc0000;
-    }
-    .cta p:last-child {
-      margin-top: 1.5rem;
-      font-size: 0.95rem;
-      opacity: 0.9;
+      font-weight: bold;
     }
     .faq h3 {
       margin-top: 1rem;
       color: #333;
     }
+    .faq p {
+      margin-bottom: 1rem;
+    }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Checklist do Caramelo: Estude Certo e Aumente Suas Chances no ENEM</h1>
     <p>O guia simples e direto que já ajudou estudantes como você a se organizarem e melhorarem suas notas!</p>
@@ -150,7 +152,7 @@
     <img src="fotos/capa livro.png" alt="Capa do Livro">
     <p>Você quer passar no ENEM, mas não sabe por onde começar?</p>
     <p>Este checklist prático vai te ajudar a organizar seus estudos e manter o foco!</p>
-    <button class="btn"><a href="https://pay.kiwify.com.br/Gbq3c2j">Quero Passar no ENEM com Ajuda do Caramelo!</button></a>
+    <a class="btn" href="https://pay.kiwify.com.br/Gbq3c2j">Quero Passar no ENEM por Só R$14,90!</a>
   </section>
 
   <section class="benefits">
@@ -176,21 +178,20 @@
   <section class="testimonials">
     <h2>Veja o que dizem:</h2>
     <div class="testimonial">
-      <strong>Ruan Guilherme:</strong> "Eu tava perdidão e o checklist me salvo. Em 2 semanas tava mó organizado!"
+      <strong>Ruan Guilherme:</strong> "Eu tava perdidão e o checklist me salvou. Em 2 semanas tava mó organizado!"
     </div>
     <div class="testimonial">
       <strong>Marcia:</strong> "Simples, direto ao ponto e ainda com bônus! Vale cada centavo."
     </div>
-<div class="testimonial">
-      <strong>Rodrigo Junior:</strong> "estava com zero espectativa, mas agora estou até confiante que consigo fazer minha tão sonhada faculdade de direito!"
+    <div class="testimonial">
+      <strong>Rodrigo Junior:</strong> "Estava com zero expectativa, mas agora estou até confiante que consigo fazer minha tão sonhada faculdade de Direito!"
     </div>
-
   </section>
 
   <section class="cta">
     <h2>Garanta já o seu!</h2>
-    <p class="price">Apenas R$49,90</p>
-    <button class="btn"><a href="https://pay.kiwify.com.br/Gbq3c2j">Quero o Checklist Agora!</button></a>
+    <p class="price">Agora por apenas R$14,90</p>
+    <a class="btn" href="https://pay.kiwify.com.br/Gbq3c2j">Quero o Checklist Agora</a>
     <p>✔ Compra segura • ✔ Acesso imediato • ✔ Pagamento único • ✔ 7 dias de garantia</p>
   </section>
 
@@ -206,7 +207,6 @@
     <p>Sim! Qualquer estudante que queira se preparar para o ENEM pode usar.</p>
   </section>
 
-  <a href="https://pay.kiwify.com.br/Gbq3c2j" class="btn-fixed">Garantir Acesso por R$49,90</a>
-
+  <a class="btn-fixed" href="https://pay.kiwify.com.br/Gbq3c2j">Garantir Acesso por R$14,90</a>
 </body>
 </html>
